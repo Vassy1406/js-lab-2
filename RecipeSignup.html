@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Recipe SignIn-Form</title>
+	<link rel="stylesheet" href="Recipe.css">
+	<link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+	<link href="https://googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,00..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+	<body style="background-color:beige;">
+	<h1 style="color:brown;text-align: center;">Sign-In Form</h1>
+	<div class="sign-in section">
+		<p style="text-align: center;"><u>Sign-In to Continue</p> </u>
+		<body onload="startClock()">
+
+  <div id="topBar">
+    <div id="clock">Loading time...</div>
+    <button onclick="toggleDarkMode()">
+      <span class="icon" id="modeIcon">🌞</span>
+      Toggle Dark Mode
+    </button>
+  </div>
+  <form id="sign-InForm">
+		<label for="username">Name of Street:</label>
+		<input type="text" id="username" required><br>
+		<label for="dob">Date of Birth:</label>
+		<input type="date" id="dob" required>
+		<label for="phone">Phone Number:</label>
+		<input type="tel" id="phone" required placeholder="e.g.0712333454" >
+		<label for="role">Sign-In:</label>
+		<select id="role" required>
+			<option values="">--Select--</option>
+			<option value="chef">Chef</option>
+			<option value="customer">Customer</option>
+		</select><br>
+	</form>
+	<form id="sign-in">
+		<label for="Fullname">Full Name:</label><br>
+		<input type="text" id="Fullname" name="Fullname" required><br>
+		<label for="Email">Email Address:</label><br>
+		<input type="Email" id="Email" name="Email" required><br>
+		<label for="Password">Create Password:</label><br>
+		<input type="Password" id="Password" name="Password" required><br>
+		<label for="confirmPassword">Confirm Password:</label>
+		<input type="password" id="confirmPassword" required><br>
+		<label for="rememberMe">
+		<input type="checkbox" id="rememberMe" name="rememberMe">Remember Me
+	</label><br>
+		<button type="submit">Create Account</button>
+
+		</form>
+			
+
+	<p>Already have an account? <a href="Login.html">Login here!</a></p></div>
+	<script src="Recipe.js"></script>
+	<script src="Recipe2.js"></script>
+</body>
+</html>
+
+
+
